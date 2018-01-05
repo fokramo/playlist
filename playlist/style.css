@@ -1,0 +1,247 @@
+.stylish-input-group{
+	margin-top: 8px;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.songsmodal{
+	max-height: 300px;
+	overflow: auto;
+}
+.container .playlistplayer{
+	position: relative;
+ 	height: 250px;
+	background-color: rgb(83, 62, 107);
+	border-radius: 120px 120px 120px 120px;
+}
+.playlistimg{
+	max-height:200px;
+	max-width: 200px;
+}
+.playimg{
+	position: relative;
+	margin-top :50px;
+	padding: 0;
+	border-radius: 50%;
+	height:163px;
+	width: 92%;
+	float: left;
+   
+}
+.spin{
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.playlistimg2{
+	position: absolute;
+	padding: 0;
+	margin:0;
+	border-radius: 50%;
+	height:150px;
+	width: 150px;
+}
+.panel {
+	box-sizing: border-box;
+    border: 0;
+ }
+ #audio {
+    margin-top: 30px;
+    margin-right: 9%;
+    background: #666;
+    width: 49.5%;
+    float: right;
+}
+
+.removesong1{
+	float:right;
+	right:20px;
+	background-color:rgba(255,255,255,0.5);
+	border-radius: 60%;
+	border:2px black solid;
+    font-size: 0.8em;
+    cursor: pointer;
+
+}
+.panel .panel-title{
+  	margin-left: 35px;
+ 	margin-top: -12px;
+	font-size:18px;
+	color: red;
+}
+.panel-body .edit{
+	background-color:rgba(255,255,255,0.5);
+	padding: 4px;
+	border-radius: 60%;
+	border:2px black solid;
+	position: relative;
+	left: 78px;
+	top: -10px;
+    font-size: 1em;
+
+ }
+ .random ,.editsong{
+ 	opacity: 70%;
+ 	top:86px;
+	background-color:rgba(255,255,255,0.5);
+	padding: 4px;
+	border-radius: 60%;
+	border:2px black solid;
+    font-size: 1em;
+    cursor: pointer;
+ }
+ .editsong:hover{
+ 	opacity: 100%;
+ 	background-color: rgb(126, 175, 164);
+ }
+ .random:hover{
+ 	opacity: 100%;
+ 	background-color: rgb(126, 175, 164);
+ }
+  .removesong1:hover{
+ 	opacity: 100%;
+ 	background-color: rgb(126, 175, 164);
+ }
+.panel-body .remove{
+	top: -10px;
+	left: 15px;
+	padding: 4px;
+	background-color:rgba(255,255,255,0.5);
+	border-radius: 60%;
+	border:2px black solid;
+	position: relative;
+     font-size: 1em;
+  }
+.play{
+ 	border-radius: 50%;
+	background-color:rgba(255,255,255,0.5);
+ 	position: relative;
+	left: -8px;
+    top: 60px;
+    font-size: 3em;
+  } 
+.play2{
+ 	border-radius: 50%;
+	background-color:rgba(255,255,255,0.5);
+ 	position: relative;
+    font-size: 3em;
+    top: -100px;
+    left: 32%;
+    cursor: pointer;
+   }
+.play3{
+ 	border-radius: 50%;
+	background-color:rgba(255,255,255,0.5);
+ 	position: relative;
+    font-size: 2.5em;
+	border:2px black solid;
+    top: -100px;
+    left: 33%;
+    cursor: pointer;
+  }
+.panel-body{
+	opacity: 0.85;
+	height: 180px;
+	width: 180px;
+}
+.gly{
+	display: none;
+	cursor: pointer;
+}
+.panel-body:hover .gly{
+	display: initial;
+}
+ 
+.panel-body:hover{
+	opacity: 1;
+}
+#playlist {
+    overflow: auto;
+    right: 11%;
+    display: inline-block;
+    background: rgb(113, 117, 122);
+    width: 47%;
+    padding: 15px;
+    position: absolute;
+    height: 170px;
+    margin-top: 62px;
+}
+.active a{
+	color:#5DB0E6;
+	text-decoration:none;
+}
+li a{
+	color:#eeeddd;
+ 	padding:5px;
+	display:block;
+}
+li a:hover{
+	text-decoration:none;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(126, 175, 164); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(126, 175, 164); 
+    -webkit-box-shadow: inset 0 0 6px rgb(126, 175, 164); 
+}
+#playlist .active:before{
+    content: "\e072";
+    font-family: 'Glyphicons Halflings';
+    font-size: 19px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+ }
+#playlist li.active{
+	display: block;
+
+}
+.active1{
+	background-color: rgb(120, 115, 180);
+}
+.panelheading{
+    margin-left: 87px;
+    padding-bottom: 13px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar{
+	position:fixed;
+	z-index: 100;
+	margin-top: -55px;
+    min-height: 50px;
+}
+.container0{
+	margin-top: 55px;
+	z-index: 1;
+}
+.container1{
+	margin-top: 70px;
+	z-index: 1;
+}
